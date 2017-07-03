@@ -1,0 +1,7 @@
+c:\users\kamil\documents\visual studio 2015\Projects\QueueSystemSimulator\QueueSystemSimulator\bin\Debug\QueueSystemSimulator.exe.config
+C:\Users\Kamil\Source\Workspaces\Queue Simulator\QueueSystemSimulator\bin\Debug\QueueSystemSimulator.exe.config
+C:\Users\Kamil\Source\Workspaces\Queue Simulator\QueueSystemSimulator\bin\Debug\QueueSystemSimulator.exe
+C:\Users\Kamil\Source\Workspaces\Queue Simulator\QueueSystemSimulator\bin\Debug\QueueSystemSimulator.pdb
+C:\Users\Kamil\Source\Workspaces\Queue Simulator\QueueSystemSimulator\obj\Debug\QueueSystemSimulator.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Source\Workspaces\Queue Simulator\QueueSystemSimulator\obj\Debug\QueueSystemSimulator.exe
+C:\Users\Kamil\Source\Workspaces\Queue Simulator\QueueSystemSimulator\obj\Debug\QueueSystemSimulator.pdb

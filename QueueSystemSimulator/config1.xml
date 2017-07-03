@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<system>
+  <serwer>
+    <!-- Przeplywnosc w bps-->
+    <przeplywnosc>8000000</przeplywnosc>
+  </serwer>
+  
+  <kolejki>
+    <liczba>4</liczba>
+    <kolejka>
+      <nazwa>K1</nazwa>
+      <!-- długość bufora w pakietach-->
+      <bufor>100</bufor>
+    </kolejka>
+    
+    <kolejka>
+      <nazwa>K2</nazwa>
+      <!-- długość bufora w pakietach-->
+      <bufor>100</bufor>
+    </kolejka>
+    
+    <kolejka>
+      <nazwa>K3</nazwa>
+      <!-- długość bufora w pakietach-->
+      <bufor>100</bufor>
+    </kolejka>
+    
+    <kolejka>
+      <nazwa>K4</nazwa>
+      <!-- długość bufora w pakietach-->
+      <bufor>100</bufor>
+    </kolejka>
+  </kolejki>
+  
+  <rozklady>
+    <liczba>1</liczba>
+    <rozklad>
+      <nazwa>R1</nazwa>
+      <lambda>10</lambda>
+    </rozklad>
+  </rozklady>
+  
+  <strumienie>
+    <liczba>1</liczba>
+    <strumien>
+      <nazwa>S1</nazwa>
+      <kolejka>K1</kolejka>
+      <rozklad>R1</rozklad>
+    </strumien>
+
+    <strumien>
+      <nazwa>S2</nazwa>
+      <kolejka>K2</kolejka>
+      <rozklad>R1</rozklad>
+    </strumien>
+
+    <strumien>
+      <nazwa>S3</nazwa>
+      <kolejka>K3</kolejka>
+      <rozklad>R1</rozklad>
+    </strumien>
+
+    <strumien>
+      <nazwa>S4</nazwa>
+      <kolejka>K4</kolejka>
+      <rozklad>R1</rozklad>
+    </strumien>
+
+  </strumienie>
+  <HTB>
+    <liczbaPriorytetow>3</liczbaPriorytetow>
+    
+    <korzen>
+      <poziom>2</poziom>
+      <dzieci>
+		<liczbaDzieci>2</liczbaDzieci>
+        <dziecko> 
+          <typ>lisc</typ>
+          <gwarantowanaSzybkoscBitowa>8000</gwarantowanaSzybkoscBitowa>
+          <szczytowaSzybkoscBitowa>80000</szczytowaSzybkoscBitowa>
+          <priorytet>0</priorytet>
+          <kwant>1000</kwant>
+          <kolejka>K1</kolejka>
+        </dziecko>
+        <dziecko>
+          <typ>srodkowy</typ>
+          <gwarantowanaSzybkoscBitowa>16000</gwarantowanaSzybkoscBitowa>
+          <szczytowaSzybkoscBitowa>140000</szczytowaSzybkoscBitowa>
+          <dzieci>
+			<liczbaDzieci>2</liczbaDzieci>
+            <dziecko>
+              <typ>lisc</typ>
+              <gwarantowanaSzybkoscBitowa>8000</gwarantowanaSzybkoscBitowa>
+              <szczytowaSzybkoscBitowa>80000</szczytowaSzybkoscBitowa>
+              <priorytet>0</priorytet>
+              <kwant>4000</kwant>
+              <kolejka>K2</kolejka>
+            </dziecko>
+            <dziecko>
+              <typ>lisc</typ>
+              <gwarantowanaSzybkoscBitowa>8000</gwarantowanaSzybkoscBitowa>
+              <szczytowaSzybkoscBitowa>80000</szczytowaSzybkoscBitowa>
+              <priorytet>1</priorytet>
+              <kwant>2000</kwant>
+              <kolejka>K3</kolejka>
+            </dziecko>
+          </dzieci>
+        </dziecko>
+        <dziecko>
+          <typ>lisc</typ>
+          <gwarantowanaSzybkoscBitowa>8000</gwarantowanaSzybkoscBitowa>
+          <szczytowaSzybkoscBitowa>80000</szczytowaSzybkoscBitowa>
+          <priorytet>0</priorytet>
+          <kwant>4000</kwant>
+          <kolejka>K2</kolejka>
+        </dziecko>
+      </dzieci>
+    </korzen>
+  </HTB>
+</system>
+
